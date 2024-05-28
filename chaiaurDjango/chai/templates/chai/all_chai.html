@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}All Chai Page{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-display mb-8 text-gray-100">Different type of Chai's are available</h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    {% for chai in chais %}
+    <div class="chai-item bg-gray-800 rounded-lg shadow-md p-6">
+        <img class="rounded-lg mb-4  w-full h-48 object-cover" src="{{ chai.image.url }}" alt="{{ chai.name }}">
+        <h3 class="text-lg font-display text-green-400">{{ chai.name }}</h3>
+        <p class="text-gray-300">
+            <span class="font-display text-green-500">Price: ₹ {{ chai.price }}</span>
+        </p>
+
+        <a href="{% url 'chai_detail' chai.id %}">
+            <button type="button"
+            class="bg-green-500 hover:bg-green-600 w-full text-white font-display py-2 px-4 rounded mt-4">
+                View Details
+            </button>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
