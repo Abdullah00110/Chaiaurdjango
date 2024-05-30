@@ -6,8 +6,8 @@ def home(request):
     return render(request , 'website/index.html')
 
 def about(request):
-    return HttpResponse("Hello.world , chai aur django mein aapka swagat hai...")
+    return HttpResponse("Ye page bhi ban jaayega sabr rakho itni jaldi kya hai")
 
 
 def contact(request):
-    return HttpResponse("Hello.world , chai aur python mein aapka swagat hai...")
+    return render(request, 'website/Contact.html')

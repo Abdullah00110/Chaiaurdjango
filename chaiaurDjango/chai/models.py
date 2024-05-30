@@ -19,3 +19,8 @@ class ChaiVariety(models.Model):
 
     def __str__(self) -> str:
         return self.name
+    
+
+class Contact(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField()
