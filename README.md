@@ -2,7 +2,7 @@
 
 ### A typical top-level directory layout
 
-  .
+.
 ├── .venv
 └── chaiaurDjango/
     ├── chai
