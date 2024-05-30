@@ -11,7 +11,16 @@
     ├── db.sqlite3
     └── manage.py
 
+### A typical top-level directory layout
 
+    .
+    ├── build                  
+    ├── docs                    
+    ├── src                    
+    ├── test                   
+    ├── tools                
+    ├── LICENSE
+    └── README.md
 
     
 ![w1](https://github.com/Abdullah00110/Chaiaurdjango/assets/148894144/cbcf16f3-1016-4ef5-8811-70ff22e7177d)
