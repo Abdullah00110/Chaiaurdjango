@@ -1,7 +1,7 @@
 Chai aur Django
 <h1>Folder Structure</h1>
 ```
-.
+
 ├── .venv
 └── chaiaurDjango/
     ├── chai
